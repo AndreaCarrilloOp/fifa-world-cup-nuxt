@@ -43,11 +43,11 @@ const noResults = computed(() => {
         </div>
 
         <section class="home-search" aria-labelledby="home-search-title">
-          <p class="eyebrow">BUSCAR PARTIDO</p>
-          <h2 id="home-search-title">Encuentra un encuentro</h2>
+          <p class="eyebrow">BÚSQUEDA</p>
+          <h2 id="home-search-title">Encuentra partidos</h2>
 
           <label>
-            <span>Equipo o código</span>
+            <span>Equipo o país</span>
             <input
               v-model="search"
               type="search"
@@ -55,7 +55,7 @@ const noResults = computed(() => {
             />
           </label>
 
-          <div v-if="searchResults.length" class="home-search-results">
+         <div v-if="searchResults.length" class="home-search-results">
             <NuxtLink
               v-for="match in searchResults"
               :key="match.match_id"
@@ -71,38 +71,38 @@ const noResults = computed(() => {
           </div>
 
           <p v-else-if="noResults" class="home-search-empty">
-            No se encontraron partidos con ese equipo o código.
+            No hay partidos para esa búsqueda.
           </p>
 
-          <NuxtLink to="/partidos" class="home-search-all">Ir al catálogo completo →</NuxtLink>
+          <NuxtLink to="/partidos" class="home-search-all">Ver todos los partidos →</NuxtLink>
         </section>
       </div>
     </section>
 
     <section class="container information-section">
-      <p class="eyebrow">ORGANIZACIÓN DE LA INFORMACIÓN</p>
-      <h2>Una jerarquía simple para explorar los datos</h2>
+      <p class="eyebrow">CÓMO EXPLORAR</p>
+      <h2>Explora el torneo en pocos pasos</h2>
 
       <div class="information-steps four-steps">
         <article>
           <span class="step-number">01</span>
           <h3>Ediciones</h3>
-          <p>Selecciona uno de los torneos entre 1930 y 2022.</p>
+          <p>Elige un Mundial entre 1930 y 2022.</p>
         </article>
         <article>
           <span class="step-number">02</span>
           <h3>Rondas</h3>
-          <p>Ubica los encuentros según la etapa de cada edición.</p>
+          <p>Consulta los partidos de cada etapa.</p>
         </article>
         <article>
           <span class="step-number">03</span>
           <h3>Partidos</h3>
-          <p>Busca, filtra y consulta los encuentros registrados.</p>
+          <p>Busca y filtra todos los encuentros.</p>
         </article>
         <article>
           <span class="step-number">04</span>
           <h3>Detalle</h3>
-          <p>Revisa marcador, fecha, sede y datos relevantes.</p>
+          <p>Consulta marcador, fecha y sede.</p>
         </article>
       </div>
     </section>
