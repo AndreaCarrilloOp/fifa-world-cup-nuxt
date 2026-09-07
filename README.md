@@ -10,6 +10,10 @@ Proyecto académico de **EIF 511 · Arquitectura de Información** para explorar
 
 **Sitio publicado:** https://fifa-world-cup-nuxt.netlify.app
 
+## Vista previa
+
+![Vista previa de FIFA World Cup Explorer](preview.png)
+
 ## Arquitectura de información
 
 **Ediciones → Rondas → Partidos → Detalle**
@@ -41,7 +45,7 @@ Se utiliza una adaptación de `matches.csv` de **The Fjelstul World Cup Database
 
 La adaptación conserva únicamente los partidos masculinos de 1930–2022 y los campos necesarios para la navegación y presentación.
 
-- **Fuente:** https://github.com/jfjelstul/worldcup
+- **Fuente:** https://github.com/jfjelstul/worldcup/blob/master/data-csv/matches.csv
 - **Licencia de datos:** CC BY-SA 4.0
 - **Copyright:** © 2023 Joshua C. Fjelstul, Ph.D.
 
