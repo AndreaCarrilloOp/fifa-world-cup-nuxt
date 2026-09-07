@@ -14,13 +14,16 @@ const editions = computed(() => {
       years.push(match.edition_year)
       list.push({
         year: match.edition_year,
-        host: match.host_country,
+        name: match.tournament_name,
         matches: 0
       })
     }
 
     for (const edition of list) {
-      if (edition.year === match.edition_year) edition.matches++
+      if (edition.year === match.edition_year) {
+        edition.matches++
+        break
+      }
     }
   }
 
