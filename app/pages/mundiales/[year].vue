@@ -85,7 +85,7 @@ useHead({ title: `Copa Mundial ${route.params.year}` })
     <header class="page-header">
       <p class="eyebrow">EDICIÓN {{ route.params.year }}</p>
       <h1>{{ matches[0].tournament_name }}</h1>
-      <p>{{ matches.length }} partidos en esta edición.</p>
+      <p>{{ matches[0].host_country }} · {{ matches.length }} partidos en esta edición.</p>
     </header>
 
     <section class="filters edition-filters" aria-label="Búsqueda y filtros de la edición">

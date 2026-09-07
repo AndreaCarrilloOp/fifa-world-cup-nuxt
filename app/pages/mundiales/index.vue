@@ -6,19 +6,21 @@ const { data: matches } = await useAsyncData('editions-matches', () => {
 })
 
 const editions = computed(() => {
+  const years = []
   const list = []
 
   for (const match of matches.value || []) {
-    const found = list.find(item => item.year === match.edition_year)
-
-    if (found) {
-      found.matches++
-    } else {
+    if (!years.includes(match.edition_year)) {
+      years.push(match.edition_year)
       list.push({
         year: match.edition_year,
-        name: match.tournament_name,
-        matches: 1
+        host: match.host_country,
+        matches: 0
       })
+    }
+
+    for (const edition of list) {
+      if (edition.year === match.edition_year) edition.matches++
     }
   }
 
