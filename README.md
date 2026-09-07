@@ -51,10 +51,3 @@ La adaptación conserva únicamente los partidos masculinos de 1930–2022 y los
 npm install
 npm run dev
 ```
-
-## Proyecto
-
-**Estudiante:** Andrea Carrillo Oporto  
-**Curso:** EIF 511 · Arquitectura de Información  
-**Repositorio:** https://github.com/AndreaCarrilloOp/fifa-world-cup-nuxt
-
