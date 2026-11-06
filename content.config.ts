@@ -1,5 +1,7 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
+// Tutorial 5: cada fila del archivo CSV es un registro independiente.
+// Los campos mantienen los nombres publicados en el repositorio del proyecto.
 export default defineContentConfig({
   collections: {
     matches: defineCollection({
