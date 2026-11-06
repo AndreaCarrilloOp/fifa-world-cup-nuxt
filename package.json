@@ -7,12 +7,7 @@
     "build": "nuxt build",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "data:sync": "node scripts/sync-data.mjs",
-    "check:data": "node scripts/check-data.mjs",
-    "predev": "npm run data:sync",
-    "prebuild": "npm run data:sync && npm run check:data",
-    "pregenerate": "npm run data:sync && npm run check:data"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
     "nuxt": "4.5.2",
@@ -22,3 +17,4 @@
     "vue-router": "5.2.0"
   }
 }
+
