@@ -34,8 +34,8 @@
 :root{--historic-bronze:#86602A;--historic-gold:#8A6126;--historic-ivory:#FBF9F5}
 .hero .eyebrow{color:#855A1B}
 .hero h1{color:#2D2922}
-.primary-link{background:#86602A;color:#fff}
-.primary-link:hover{background:#69471C}
+.primary-link{background:#4A2C20;color:#fff}
+.primary-link:hover{background:#382117;color:#fff}
 .secondary-link{border-color:#B8A687;color:#86602A;background:#fff}
 .secondary-link:hover{background:#F7F2E9}
 .edition-tile:hover{border-color:#8A6126}
